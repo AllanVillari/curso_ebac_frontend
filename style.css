@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #1a1b1e;
+}
+
+section.main {
+    width: 100%;
+    color: #C1C2C5;
+}
+
+div.center {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+
+}
+
+div.titulo {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3362D0;
+}
+
+div.titulo p {
+    font-weight: normal;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #C1C2C5;
+}
+
+section.lists {
+    margin-top: 5rem;
+}
+
+.container-animes h2 {
+    color: #FA5252;
+}
+
+.container-rocks h2 {
+    color: #5F3DC4;
+}
+
+ul.list-animes {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+ul.list-animes li {
+    margin-top: 2rem;
+    list-style: none;
+    width: 18%;
+    margin-right: 2%;
+    padding: 5px;
+
+}
+
+
+.lists img {
+    width: 12rem;
+    height: 18rem;
+    border-radius: 20px;
+}
+
+li p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+
+}
+
+section.contato {
+    text-align: center;
+    margin: 50px 0;
+}
+
+section.contato h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+section.contato form {
+    width: 100%;
+
+
+}
+
+.contato textarea {
+    min-height: 250px;
+    width: 100%;
+    background: #cbd4e6;
+    border: 1px solid #C3CCE8;
+    border-radius: 5px;
+    opacity: 1;
+    resize: none;
+    margin: 10px 0;
+}
+
+
+.contato input[type=text],
+.contato input[type=email] {
+    margin: 10px 0;
+    width: 100%;
+    height: 48px;
+    background: #cbd4e6;
+    border: 1px solid #C3CCE8;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.contato input[type=submit] {
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    display: block;
+    border: 0;
+    background: #3362D0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+section.contato input[type=submit]:hover {
+    background: #5072c4;
+    transition: 0.2s;
+}
