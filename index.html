@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de comparação</title>
     <link rel="stylesheet" href="style.css">
-    <script src="valida.js"></script>
+
 </head>
 
 <body>
@@ -14,16 +14,17 @@
         <div class="center">
             <h1>Faça com que A seja menor que B</h1>
             <div style="max-width:750px">
-                <form method="post" id="form-compare">
-                    <input type="number" id="numberA" required placeholder="Digite o numero A">
-                    <input type="number" id="numberB" required placeholder="Digite o numero B">
-                    <input type="submit" id="btn_submit" name="COMPARAR">
+                <form id="form-compare">
+                    <input type="text" id="numberA" required placeholder="Digite o numero A">
+                    <input type="text" id="numberB" required placeholder="Digite o numero B">
+                    <button type="submit" id="btn_submit">COMPARAR</button>
                 </form>
-                <p class="confirm-message">O Numero A é menor que B</p>
+                <p class="confirm-menssage"></p>
+                
             </div>
         </div>
     </section>
-
+    <script src="valida.js"></script>
 </body>
 
 </html>
