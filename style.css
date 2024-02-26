@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+
+}
+
+.container {
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: #0067DA;
+    color: white;
+    font-style: italic;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    width: 50%;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1em;
+    font-style: normal;
+}
+
+header a:hover {
+    color: #a4c6e9;
+}
+
+
+
+.sobre {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+.sobre img {
+    width: 100%;
+}
+
+h2 {
+    color: #3e81e4;
+    font-style: italic;
+    padding-bottom: 24px;
+    border-bottom: solid 2px #3e81e4;
+    margin-bottom: 1.5em;
+
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    justify-content: space-between;
+}
+
+.produto {
+    width: 23%;
+    margin-bottom: 3em;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+
+.produto p {
+    margin: 1em 0;
+}
+
+.produto button {
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: #0067DA;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .produto {
+        width: 47%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .produto {
+        width: 96%;
+    }
+
+    nav {
+        display: none;
+        background-color: #0067DA;
+        padding: 16px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    div.menu-hamburguer {
+        display: block;
+
+    }
+
+
+
+}
